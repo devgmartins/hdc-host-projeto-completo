@@ -1,0 +1,554 @@
+/*Header/Navbar*/
+header#nav-container {
+  background-color: #232a31;
+  padding: 1rem 5rem;
+}
+
+nav.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+header .logo {
+  width: 7rem;
+}
+
+nav .nav-links {
+  list-style: none;
+  text-transform: uppercase;
+
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+
+  transition: 0.5s;
+}
+
+.nav-links a.nav-link:hover {
+  color: #ccc;
+}
+
+.nav-links a.login-btn {
+  padding: 1.5rem 2rem;
+  background-color: #2cc76a;
+  border-radius: 0.5rem;
+}
+
+.nav-links a.login-btn:hover {
+  color: #232a31;
+}
+
+/*Main/Minibanner*/
+div.mini-banner {
+  background-image: url(../img/mainbanner.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 40rem 0;
+  color: #fff;
+}
+
+.mini-banner h1 {
+  font-size: 4.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.mini-banner p {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+/*Main/Especialidades*/
+section#specialties {
+  padding: 10rem;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+#specialties article {
+  color: #333;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 25rem;
+  gap: 3rem;
+}
+
+#specialties article p {
+  color: #70747a;
+}
+
+#specialties article h2 {
+  font-size: 1.8rem;
+}
+
+#specialties article i {
+  font-size: 6rem;
+}
+
+#specialties article i.security {
+  color: #2cc76a;
+}
+
+#specialties article i.speed {
+  color: #ef3f29;
+}
+
+#specialties article i.suport {
+  color: #ef8f29;
+}
+
+/*Main/Preços*/
+section#pricings {
+  padding: 0 10rem 10rem 10rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*Preços/Título*/
+#pricings > h2 {
+  font-size: 3.6rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/*Preços/Parágrafo*/
+#pricings > p {
+  font-size: 2.2rem;
+  color: #70747a;
+}
+
+/*Preços/Planos*/
+#pricings .plans-container {
+  width: 100%;
+  margin-top: 10rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/*Planos/Plano*/
+.plans-container .plan {
+  text-align: center;
+  max-width: 40rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  flex: 1 1 20rem;
+}
+
+/*Plano/Preços*/
+.plan-price {
+  width: 12rem;
+  height: 12rem;
+  color: #fff;
+  background-color: #2cc76a;
+  border-radius: 50%;
+  font-size: 1.8rem;
+
+  position: relative;
+  margin: 0 auto -5rem auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Plano/Título*/
+.plan-title {
+  padding: 5rem 0 2rem 0;
+  background-color: #232a31;
+}
+
+.plan-title h3 {
+  height: 5rem;
+  line-height: 5rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/*Plano/Especialidades*/
+.plan-contents li {
+  height: 5rem;
+  line-height: 5rem;
+  list-style: none;
+  color: #333;
+  background-color: #e8e9ea;
+}
+
+/*Plano/Botão*/
+.plan-btn {
+  background-color: #2cc76a;
+}
+
+.plan-btn button {
+  height: 7.5rem;
+  line-height: 7.5rem;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 2.4rem;
+
+  cursor: pointer;
+}
+
+/*Plano/Recomendado*/
+.plan.recommended .plan-price,
+.plan.recommended .plan-btn {
+  background-color: #f45c57;
+}
+
+/*Main/Buscar Domínio*/
+section#search-domain {
+  padding: 10rem;
+  text-align: center;
+  background-color: #34454e;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/*Buscar Domínio/Título*/
+#search-domain h2 {
+  font-size: 4.2rem;
+  color: #fff;
+}
+
+/*Buscar Domínio/Parágrafo*/
+#search-domain p {
+  font-size: 2.4rem;
+  color: #ccc;
+}
+
+/*Buscar Domínio/Formulário*/
+#search-domain form {
+  width: 70%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*Formulário/Input*/
+#search-domain form > input {
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  border: none;
+}
+
+/*Formulário/Botão*/
+#search-domain form > button {
+  padding: 1.5rem 2rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #2cc76a;
+  border: none;
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+}
+
+/*Main/Contato*/
+section#contact {
+  padding: 10rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/*Contato/Título*/
+#contact h2 {
+  font-size: 3.6rem;
+  color: #333;
+}
+
+/*Contato/Parágrafo*/
+#contact p {
+  font-size: 2rem;
+  color: #70747a;
+}
+
+/*Contato/Formulário*/
+#contact form {
+  margin-top: 3rem;
+  width: 50%;
+}
+
+/*Formulário/Input*/
+#contact form > input {
+  width: 25rem;
+  border: 0.1rem solid #ccc;
+}
+
+#contact form > input:first-child {
+  margin-right: 2rem;
+}
+
+/*Formuçário/Textarea*/
+#contact form > textarea {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: block;
+  width: 52.5rem;
+  height: 15rem;
+
+  border: 0.1rem solid #ccc;
+}
+
+/*Formulário/Estilos Gerais*/
+#contact form input,
+#contact form textarea,
+#contact form button {
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  outline: none;
+  font-size: 1.8rem;
+}
+
+/*Formulário/Botão*/
+#contact form > button {
+  margin-top: 2rem;
+  width: 25%;
+  background-color: #2cc76a;
+  color: #fff;
+  border: none;
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+/*Main/Footer*/
+footer {
+  padding: 0 10rem 10rem 10rem;
+  text-align: center;
+  font-weight: bold;
+  color: #34454e;
+}
+
+.hamburguer {
+  display: none;
+}
+
+.hide {
+  display: none !important;
+}
+
+/*Laptop*/
+@media (width <= 1024px) {
+  #contact form {
+    width: 100%;
+  }
+
+  #contact form > input {
+    width: 40%;
+    display: inline;
+  }
+
+  #contact form > textarea {
+    width: calc(80% + 2.5rem);
+  }
+}
+
+/*Tablet*/
+@media (width <= 800px) {
+  div.mini-banner {
+    padding: 48rem 0;
+  }
+
+  section#specialties {
+    padding: 10rem 5rem 10rem 5rem;
+  }
+
+  #search-domain form {
+    width: 100%;
+  }
+
+  #search-domain form > button {
+    width: 100%;
+  }
+
+  section#contact {
+    padding: 10rem 5rem 10rem 5rem;
+  }
+
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  #contact form > input {
+    width: 100%;
+    padding: 2rem;
+    display: block;
+  }
+
+  #contact form > textarea {
+    width: 100%;
+    padding: 2rem;
+    height: 20rem;
+    margin: 0;
+  }
+
+  #contact form > button {
+    padding: 2rem;
+    width: 100%;
+  }
+}
+
+/*Mobile*/
+@media (width <= 435px) {
+  header#nav-container {
+    background-color: #232a31;
+    padding: 1rem 2rem;
+  }
+
+  .hamburguer {
+    color: #fff;
+    font-size: 4rem;
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+
+  ul.desktop {
+    display: none;
+  }
+
+  ul.mobile-links {
+    list-style: none;
+    text-transform: uppercase;
+    background-color: #232a31;
+    padding: 3rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .mobile-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+
+    transition: 0.5s;
+  }
+
+  .mobile-links a.nav-link:hover {
+    color: #ccc;
+  }
+
+  .mobile-links a.login-btn {
+    padding: 1.5rem 2rem;
+    background-color: #2cc76a;
+    border-radius: 0.5rem;
+  }
+
+  .mobile-links a.login-btn:hover {
+    color: #232a31;
+  }
+
+  .mobile-links li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .mobile-links .login-btn {
+    display: block;
+    width: 100%;
+  }
+
+  div.mini-banner {
+    padding: 33rem 0;
+  }
+
+  section#specialties {
+    padding: 10rem 5rem 10rem 5rem;
+  }
+
+  section#pricings {
+    padding: 0 5rem 10rem 5rem;
+  }
+
+  #pricings .plans-container {
+    flex-direction: column;
+  }
+
+  .plans-container .plan {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  section#search-domain {
+    padding: 10rem 5rem 10rem 5rem;
+  }
+
+  #search-domain form {
+    width: 100%;
+  }
+
+  #search-domain form > input {
+    font-size: 1.6rem;
+  }
+
+  #search-domain form > button {
+    width: 100%;
+  }
+
+  section#contact {
+    padding: 10rem 5rem 10rem 5rem;
+  }
+
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  #contact form > input {
+    width: 100%;
+    padding: 2rem;
+    display: block;
+  }
+
+  #contact form > textarea {
+    width: 100%;
+    padding: 2rem;
+    height: 20rem;
+    margin: 0;
+  }
+
+  #contact form > button {
+    padding: 2rem;
+    width: 100%;
+  }
+}
